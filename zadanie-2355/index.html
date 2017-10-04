@@ -11,30 +11,35 @@
     
   <form action="https://formspree.io/pgradkowska@gmail.com"
       method="POST">
-    Imię:<br>
+    <label for="imie">Imię:</label><br>
     <input type="text" name="imie"><br>
-    Nazwisko:<br>
+    
+    <label for="nazwisko"></label>Nazwisko:<br>
     <input type="text" name="nazwisko"><br>
-    Adres e-mail:<br>
+    
+    <label for="email">Adres e-mail:</label><br>
     <input type="email" name="_replyto"><br>
-    Nr telefonu:<br>
+    
+    <label for="telefon">Nr telefonu:</label><br>
     <input type="text" name="telefon"><br>
-    Miasto:
+    
+    <label for="miasto">Miasto:</label>
     <select name="miasto">
       <option value="krakow">Kraków</option>
       <option value="warszawa">Warszawa</option>
       <option value="gdansk">Gdańsk</option>
-    </select><br>
-    <br>Płeć<br>
-    <input type="radio" name="plec">Kobieta<br>
-    <input type="radio" name="plec">Mężczyzna<br>
-    <input type="radio" name="plec">Inna<br>
-    <br>Zgoda na wykorzystywanie danych osobowych<br>
-    <input type="checkbox" name="zgoda giodo">Zgadzam się na wykorzystywanie moich danych<br>
-    <input type="checkbox" name="zgoda giodo">Nie zgadzam się na wykorzystywanie moich danych<br><br>
-    Wiadomość<br>  
+    </select><br><br>
+    
+    <label for="plec">Płeć</label><br>
+    <input type="radio" name="plec" id="kobieta" value="kobieta">Kobieta<br>
+    <input type="radio" name="plec" id="mezczyzna" value="mezczyzna">Mężczyzna<br>
+    <input type="radio" name="plec" id="inna" value="inna">Inna<br><br>
+    
+    <label for="zgoda giodo">Czy wyrażasz zgodę na wykorzystanie danych osobowych?</label><br>
+    <input type="checkbox" name="zgoda giodo" id="zgoda" value="zgoda">Tak, zgadzam się.<br><br>
+    
+    <label for="wiadomosc">Wiadomość</label><br>  
     <textarea name="wiadomość" rows=10 cols=30></textarea><br>
-
     
     <br><input type="submit" value="Wyślij formularz"><br>
     
