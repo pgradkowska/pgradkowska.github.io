@@ -12,34 +12,37 @@
   <form action="https://formspree.io/pgradkowska@gmail.com"
       method="POST">
     <label for="imie">Imię:</label><br>
-    <input type="text" name="imie"><br>
+    <input type="text" id="imie" name="imie"><br>
     
-    <label for="nazwisko"></label>Nazwisko:<br>
-    <input type="text" name="nazwisko"><br>
+    <label for="nazwisko">Nazwisko:</label><br>
+    <input type="text" id="nazwisko" name="nazwisko"><br>
     
     <label for="email">Adres e-mail:</label><br>
-    <input type="email" name="_replyto"><br>
+    <input type="email" id="email" name="_replyto"><br>
     
     <label for="telefon">Nr telefonu:</label><br>
-    <input type="text" name="telefon"><br>
+    <input type="text" id="telefon" name="telefon"><br>
     
     <label for="miasto">Miasto:</label>
-    <select name="miasto">
+    <select id="miasto" name="miasto">
       <option value="krakow">Kraków</option>
       <option value="warszawa">Warszawa</option>
       <option value="gdansk">Gdańsk</option>
-    </select><br><br>
+    </select><br>
     
-    <label for="plec">Płeć</label><br>
-    <input type="radio" name="plec" id="kobieta" value="kobieta">Kobieta<br>
-    <input type="radio" name="plec" id="mezczyzna" value="mezczyzna">Mężczyzna<br>
-    <input type="radio" name="plec" id="inna" value="inna">Inna<br><br>
+    <p>Płeć</p>
+    <input type="radio" name="plec" id="female" value="female">
+    <label for="female">Kobieta</label><br>
+    <input type="radio" name="plec" id="male" value="male">
+    <label for="male">Mężczyzna</label><br>
+    <input type="radio" name="plec" id="other" value="other">
+    <label for="other">Inna</label><br><br>
     
-    <label for="zgoda giodo">Czy wyrażasz zgodę na wykorzystanie danych osobowych?</label><br>
-    <input type="checkbox" name="zgoda giodo" id="zgoda" value="zgoda">Tak, zgadzam się.<br><br>
+    <label for="zgoda_giodo">Czy wyrażasz zgodę na wykorzystanie danych osobowych?</label><br>
+    <input type="checkbox" id="zgoda_giodo" name="zgoda" value="zgoda">Tak, zgadzam się.<br><br>
     
-    <label for="wiadomosc">Wiadomość</label><br>  
-    <textarea name="wiadomość" rows=10 cols=30></textarea><br>
+    <label for="wiadomosc">Wiadomość:</label><br>  
+    <textarea id=wiadomosc name="wiadomość" rows=10 cols=30></textarea><br>
     
     <br><input type="submit" value="Wyślij formularz"><br>
     
