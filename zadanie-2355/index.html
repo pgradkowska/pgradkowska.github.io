@@ -6,7 +6,7 @@
     <title>Formularz - zadanie domowe - repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
-  
+<!--Kody kolorów: •  tło:  #213b50 •  pole nieaktywne: #2b4a64 •  pole aktywne: #4e708c •  ramka aktywnego pola i kolor tekstu: #ffffff -->
   <body>
     
   <form action="https://formspree.io/pgradkowska@gmail.com"
@@ -22,16 +22,15 @@
     
     <label for="telefon">Nr telefonu:</label><br>
     <input type="text" id="telefon" name="telefon"><br>
-    
-    <label for="miasto">Miasto:</label>
+    <label for="miasto">Miasto:</label><br>
     <select id="miasto" name="miasto">
       <option value="krakow">Kraków</option>
       <option value="warszawa">Warszawa</option>
       <option value="gdansk">Gdańsk</option>
-    </select><br>
+    </select><br><br>
     
-    <p>Płeć</p>
-    <input type="radio" name="plec" id="female" value="female">
+    <label>Płeć</label><br>
+    <input type="radio" name="plec" id="female" value="female" checked="checked">
     <label for="female">Kobieta</label><br>
     <input type="radio" name="plec" id="male" value="male">
     <label for="male">Mężczyzna</label><br>

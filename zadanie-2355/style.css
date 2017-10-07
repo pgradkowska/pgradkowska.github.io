@@ -5,46 +5,50 @@ body {
 
 form {
     font-family: sans-serif, Arial;
+    color: white;
+    background-color: #213b50;
+    padding: 15px;
 }
 
-input[type=text] {
-    width: 150px;
-    padding: 4px 4px;
-    margin: 4px 0;
-    box-sizing:border-box;
+input {
+    display: inline-block;
+    width: 250px;
+    padding: 5px 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 0;
 }
 
-input[type=email] {
-    width: 150px;
-    padding: 4px 4px;
-    margin: 4px 0;
-    box-sizing:border-box;
+input select,[type=text], [type=email], select, textarea {     
+    background-color : #2b4a64;
+    font-size: 14px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: white;
+    width: 250px;
 }
 
-select {
-    padding: 4px 4px;
-    margin: 4px;
+[type=radio], [type=checkbox] {
+    width:auto;
 }
-
-input[type=radio] {
-    margin: 4px;
-    box-sizing:border-box;
-}
-
-input[type=checkbox] {
-    margin: 4px;
-    box-sizing:border-box;
-}
-
 textarea {
     width: 250px;
     height: 100px;
 }
 
+input:focus { 
+    background-color: #4e708c;
+    border: 2px solid white;
+    outline: 0;
+
+}
 input[type=submit] {
-    background-color: darkorange;
+    background-color: lime;
     color: black;
     text-decoration-style: solid;
-    font-size: 16px;
-    padding: 8px 8px;  
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px;  
+    box-sizing: border-box;
+    width: auto;
 }
