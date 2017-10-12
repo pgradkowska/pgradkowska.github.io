@@ -57,7 +57,9 @@ div h2 {
         }
     
     #tekst {
+        position: absolute;
         color: white;
         padding: 3%;   
+        top: 40%;
     }
 }
